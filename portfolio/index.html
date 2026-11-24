@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivam Nalawade | Web Developer Portfolio</title>
+<meta name="description" content="Portfolio of Shivam Nalawade, MCA student and web developer in Pune.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">Shivam<span>.dev</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch theme">Dark</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm</p>
+    <h1>Shivam Nalawade</h1>
+    <p class="role"><span id="typed"></span><i class="cursor"></i></p>
+    <p class="lead">MCA student in Pune building websites with HTML, CSS and JavaScript, and learning Java to build real-world software.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Contact me</a>
+      <!-- Put your resume PDF in this folder and keep this name -->
+      <a class="btn" href="Shivam_Nalawade_Resume.pdf" download>Download resume</a>
+    </div>
+  </div>
+  <figure class="portrait">
+    <img src="images/shivam.jpg" alt="Portrait of Shivam Nalawade" width="800" height="1010">
+    <figcaption>Pune, Maharashtra</figcaption>
+  </figure>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <div class="about-grid">
+    <p>I'm a first-year MCA student at IMED, Bharati Vidyapeeth, Pune. I love technology and keep building my skills through online courses, projects and tutorials.</p>
+    <p>I enjoy solving problems and want to work on real-world projects. I'm open to internships and collaborations where I can learn and grow as a developer.</p>
+  </div>
+  <ul class="facts">
+    <li><b>Location</b> Pune, Maharashtra, India</li>
+    <li><b>Studying</b> MCA, 2026 to 2028</li>
+    <li><b>Focus</b> Web development, Java, problem solving</li>
+    <li><b>Status</b> Open to internships</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-groups">
+    <div>
+      <h3>Web development</h3>
+      <div class="bars">
+        <div class="bar"><span>HTML</span><i data-level="90"></i></div>
+        <div class="bar"><span>CSS</span><i data-level="85"></i></div>
+        <div class="bar"><span>JavaScript</span><i data-level="70"></i></div>
+        <div class="bar"><span>Git and GitHub</span><i data-level="65"></i></div>
+      </div>
+    </div>
+    <div>
+      <h3>Programming</h3>
+      <div class="bars">
+        <div class="bar"><span>Java</span><i data-level="70"></i></div>
+        <div class="bar"><span>Python</span><i data-level="65"></i></div>
+        <div class="bar"><span>Data structures</span><i data-level="55"></i></div>
+        <div class="bar"><span>SQL</span><i data-level="50"></i></div>
+      </div>
+    </div>
+    <div>
+      <h3>People skills</h3>
+      <ul class="chips">
+        <li>Communication</li><li>Team leadership</li><li>Presentation</li><li>Problem solving</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Edit the percentages in <code>index.html</code> (data-level) to match your real level.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="sub">My web development assignments and practice work live on GitHub.</p>
+  <div class="cards">
+    <article class="card">
+      <h3>Web Development Assignments</h3>
+      <p>My college web development assignments, from page layouts to forms and JavaScript practice.</p>
+      <p class="tags">HTML, CSS, JavaScript</p>
+      <a href="https://github.com/shivamai-bot/web-development-assignments" target="_blank" rel="noopener">View code on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Student Study Hub</h3>
+      <p>A web project built to help students organise and find their study material in one place.</p>
+      <p class="tags">HTML, CSS, JavaScript</p>
+      <a href="https://github.com/shivamai-bot/student-study-hub" target="_blank" rel="noopener">View code on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Personal Portfolio</h3>
+      <p>This site: a responsive portfolio with a theme switch and animated skill bars.</p>
+      <p class="tags">HTML, CSS, JavaScript</p>
+      <a href="https://github.com/shivamai-bot" target="_blank" rel="noopener">See all repositories</a>
+    </article>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ol class="timeline">
+    <li>
+      <time>Jul 2026 to Mar 2028</time>
+      <h3>Master of Computer Applications</h3>
+      <p>Bharati Vidyapeeth (IMED), Pune. Information Technology.</p>
+    </li>
+    <li>
+      <time>Jun 2023 to Apr 2026</time>
+      <h3>Bachelor of Computer Application</h3>
+      <p>Shivaji University, Kolhapur. Information Technology.</p>
+    </li>
+  </ol>
+</section>
+
+<section id="contact">
+  <h2>Let's talk</h2>
+  <p class="sub">Looking for an internship or a project partner? Send me a message.</p>
+  <div class="contact-grid">
+    <ul class="links">
+      <li><a href="mailto:shivamnalawade3@gmail.com">shivamnalawade3@gmail.com</a></li>
+      <li><a href="tel:+919579066717">+91 95790 66717</a></li>
+      <li><a href="https://www.linkedin.com/in/shivam-nalawade-414155242/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/shivamai-bot" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <form id="contactForm">
+      <label>Name <input type="text" id="fname" required></label>
+      <label>Message <textarea id="fmsg" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Send by email</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Shivam Nalawade</footer>
+<script src="script.js"></script>
+</body>
+</html>
